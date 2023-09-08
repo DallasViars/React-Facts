@@ -1,0 +1,84 @@
+*, *::after, *::before { box-sizing: border-box; }
+body, html { margin: 0; padding: 0; }
+p, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+
+body {
+  position: relative;
+  background-color: #282D35;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  padding: 2em;
+  align-items: center;
+  background: #21222A;
+}
+
+h1 {
+  color: #61dafb;
+  font-size: 1.4rem;
+  margin-left: 0.25em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: calc(39 / 16)rem;
+}
+.img-resp {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-info {
+  margin-left: auto;
+  color: #DEEBF8;
+  font-weight: 600;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  height: 100%;
+  padding-top: 1.75em;
+  width: 80%;
+  margin: 0 auto;
+  background-image: url("./assets/react.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  list-style: none;
+}
+li {
+  font-size: 1rem;
+}
+
+li::before {
+  content: "\2022";
+  color: #61dafb;
+  font-weight: 600;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  height: 1em;
+  font-size: 1.5em;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
